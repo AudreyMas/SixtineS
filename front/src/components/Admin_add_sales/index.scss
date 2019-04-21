@@ -1,0 +1,45 @@
+@import '../../assets/scss/variables';
+
+.admin_add_sales_body {
+  margin-top: 60px;
+}
+
+.admin_add_sales_title {
+  text-align: center;
+  color: #1E7BBF;
+}
+
+.admin_add_sales_form_container {
+  display: flex;
+  justify-content: center;
+}
+
+.admin_add_sales_shop_info_container {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  width: 300px;
+}
+
+.admin_add_sales_button_container {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+
+.admin_add_sales_button_reset {
+  padding-right: 5px;
+}
+
+.admin_add_sales_button_submit {
+  padding-left: 5px;
+}
+
+.admin_add_sales_button {
+  border: none;
+  background: #1E7BBF;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  color: #fff
+}

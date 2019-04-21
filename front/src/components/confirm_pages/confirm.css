@@ -1,0 +1,18 @@
+.confirm_container {
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.confirm_button {
+  margin: 20px 0;
+  padding: 12px 20px;
+  border-style: none;
+  border-radius: 45px;
+  background-color: #08c;
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}

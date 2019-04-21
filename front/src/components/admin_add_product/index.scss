@@ -1,0 +1,104 @@
+@import '../../assets/scss/variables';
+
+.admin_add_product_title {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  color: #1E7BBF;
+}
+
+.admin_add_product_form_container {
+  display: flex;
+  justify-content: center;
+}
+
+.admin_add_product_shop_info_container {
+  border-radius: 5px;
+  background-color: $gray;
+  padding: 10px;
+  width: 300px;
+}
+
+.admin_add_product_delivery_address_container {
+  border-radius: 5p;
+  background-color: $gray;
+  padding: 10px;
+  width: 300px;
+}
+
+.admin_add_product_bill_address_container {
+  border-radius: 5px;
+  background-color: $gray;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.admin_add_product_bill_and_delivery_container {
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.admin_add_product_button_container {
+  display: flex;
+  justify-content: center;
+  margin: 2em auto;
+
+  
+}
+
+.admin_add_product_button_reset {
+  padding-right: 5px;
+}
+
+.admin_add_product_button_submit {
+  padding-left: 5px;
+ 
+}
+
+.admin_add_product_button {
+  border: none;
+  background: $blue;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  color: #fff;
+}
+
+@media only screen and (max-width: 650px) {
+  
+  .admin_add_product_form_container {
+    display: flex;   
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .admin_add_product_shop_info_container {
+    margin-bottom: 20px;
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  .admin_add_product_bill_address_container {
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  .admin_add_product_delivery_address_container {
+    box-sizing: border-box;
+  }
+
+  .admin_add_product_bill_and_delivery_container {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .admin_add_product_button_container {
+    margin: 2em auto;
+  }
+
+  .admin_add_product_button {
+    width: 120px;
+    height: 42px;
+  }
+  
+}

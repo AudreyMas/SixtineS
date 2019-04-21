@@ -1,0 +1,14 @@
+.header_logo {
+  height: 40px;
+}
+
+.header_container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4em;
+  
+  /* Line to replace the Hr balise */
+  border-bottom: 3px solid #f5f5f5
+}
+

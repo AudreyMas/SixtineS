@@ -1,0 +1,65 @@
+h1 {
+    margin: auto;
+}
+
+.login_container {
+    display: flex;
+    height: 100vh;
+}
+
+.login_background_container {
+    overflow: hidden;
+    width: 50%;
+    background-image: url('./images/img_login.jpg');
+    background-size: cover;
+    background-position:  50% 50%;
+}
+
+.login_background_container_image {
+    width: 50%;
+}
+
+.login_form_container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.login_form {
+    display: flex;
+    flex-direction: column;
+}
+.login_country_container {
+    padding-top: 20px;
+}
+
+.login_password_container {
+    padding-top: 10%;
+}
+
+.login_errormsg {
+    justify-content: center;
+    color : red;
+}
+
+.login_bouton_container {
+    padding-top: 30%;
+    text-align: center;
+}
+
+.login_margin_auto {
+    margin: 0 auto;
+}
+
+
+
+
+@media only screen and (max-width: 650px) {
+    .login_background_container {
+        display: none;
+    }
+  }
+
+

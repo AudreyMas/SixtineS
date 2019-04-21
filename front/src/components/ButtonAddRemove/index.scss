@@ -1,0 +1,73 @@
+@import '../../assets/scss/variables';
+
+.quantity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  &-legend{
+    width:10%;
+    line-height: 1em;
+  }
+  &-selected{
+    display: flex;
+    align-items: center;
+
+    &-button{
+      background-color: $blue;
+      color: #FFF;
+      border: none;
+      padding: 5px 10px;
+      outline: none;
+      cursor: pointer;
+      &.add{
+        border-radius: 0 5px 5px 0;
+
+      }
+      &.remove{
+       border-radius: 5px 0 0 5px;;
+
+      }
+    }
+    &-input{
+      background-color: $gray;
+      border: none;
+      padding: 3.5px;
+      text-align: center;
+      width:4em;
+      line-height: 1em;
+      box-sizing: border-box;
+     outline: none;
+     border-radius:0px;
+    }
+  }
+
+  &-stock{
+    width: 40%;
+    padding: 10px;
+    margin-left: 10px;
+    box-sizing: border-box;
+    &-value{
+      background-color: $gray;
+      border-radius: 5px;
+      padding: 5px;
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+  }
+}
+
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}

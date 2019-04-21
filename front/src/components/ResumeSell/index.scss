@@ -1,0 +1,108 @@
+@import '../../assets/scss/variables';
+
+.all-order{
+    width: 5em;
+    display: none;
+    
+    @media (min-width: 992px) {
+        display: block;
+        width: 3em;
+        top: 2em;
+        margin-left: 20em;
+        position: absolute;
+    }
+
+}
+
+  .button-submit-sell{
+    background-color: #d3d2d2;
+    border-radius: 20px;
+    padding:0.5em 2em;
+    border: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
+
+#page-resumeSell{
+  text-align: center;
+  padding-top:1em;
+
+  > .page-resumeSell-title{
+      color:$blue;
+      text-align: center;
+      font-size: 50px;
+      margin-bottom: 1em;
+      margin-top: 1em;
+  }    
+      > .table-sell {    
+          > .table-sell-ul {
+              display: none;
+              @media (min-width: 700px) {
+                    
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+              > .table-sell-ul-li {
+                  width:7em;
+                  text-align: center;
+                  color:$blue;
+                  padding:1em;
+              }
+          }
+          > .list-sell {
+              background-color: $gray;
+              padding: 2em 4em;
+              @media (min-width: 700px) {
+                padding:3em 1em 2em 1em;
+            }
+              > .resume{
+                  > .resume-sell {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    background-color: white;
+                    margin: 0 auto 1em auto;
+                    border-radius:5px;
+                    width: 100%;
+
+                    flex-direction: column;
+                    @media (min-width: 700px) {
+                        flex-direction: row;
+                        justify-content: center;
+                        width:100%;
+                    }            
+                      > .resume-sell-li{
+                          width:8em;
+                          text-align: center;
+                          border-radius:5px;
+                          color: gray;
+                          margin-left: auto;
+                          margin-right: auto;
+                          padding:1em;
+                          @media (min-width: 700px) {     
+                            margin: 0.5em 0 0.5em 0;
+                        }
+                        span{
+                        display: block;
+                        font-weight: 100;
+                        color: $blue;
+                            @media (min-width: 700px) {
+                                display: none;
+                            }
+                        }
+                      }
+                      
+                      
+                      >.resume-sell-li{
+                          width:7em;
+                      }
+                      
+                  }  
+              }   
+          }   
+      }
+  }
+

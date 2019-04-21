@@ -1,0 +1,101 @@
+$blue-color: #1E7BBF;
+$grey-color: #F5F5F5;
+
+/*all buttons*/
+.buttons{
+    background-color: $blue-color;
+    color: white;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    &:hover{
+        background-color: #5fa0d0;
+    }
+}
+
+
+
+/* MOBILE SCREEN */
+.container{
+    .deux-buttons{
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+       .buttons {
+           &:first-child{
+               margin-right: 0.3em;
+           }
+        }
+    }
+}
+
+
+.container_recall_recent_unpaid{
+    background-color: $grey-color;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:5em 0;
+    margin-top: 30px;
+    >.bloc{
+        background-color: white;
+        padding: 2em;
+        margin: 0.5em ;
+        width: 15em;
+        display: flex;
+        flex-direction: column;
+        >.title-icon{
+            display: flex;
+            & :last-child{
+                padding-left:1em;
+            } 
+        }
+        >ul{
+            display: flex;
+            list-style: none;
+            padding: 0 0 1em 0;
+            margin-bottom: 0;
+            &:not(last-child){
+                border-bottom: #D3D6E0 1px solid;
+            }
+            >li{    
+                >span{
+                    padding: 0 0.5em 0 0.5em;
+                    font-weight: bold;
+                }
+            }
+        }
+        >.view-more{
+            margin-top: 1em;
+            text-align: center;
+            width: 5em;
+            margin-left: auto;
+            margin-right: auto; 
+        }
+    }
+}
+
+/* TABLETTE SCREEN */
+
+@media screen and (min-width: 760px ){
+    .container{
+        .deux-buttons{
+            justify-content: flex-end;
+            width: 39em;
+        }
+    }
+}
+
+
+/* DESKTOP SCREEN */
+@media screen and (min-width: 1024px ){
+    .container{
+        .deux-buttons{
+            width: 59em;
+        }
+    }
+}

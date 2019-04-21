@@ -1,0 +1,139 @@
+@import '../../assets/scss/variables';
+
+.add_customer_body {
+  margin: 2rem;
+}
+
+.add_customer_title2{
+  font-family: 'Roboto', sans-serif;
+  color: #1E7BBF;
+  font-weight: 100;
+}
+
+
+.add_customer_input {
+  padding: .5rem;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.add_customer_dropdown {
+  padding: .5rem;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.add_customer_input:focus {
+  border-color: #007eff;
+  outline: none;
+}
+
+.add_customer_input.error {
+  border-color: red;
+}
+
+.add_customer_legend {
+  font-weight: bold;
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.input-feedback {
+  color: red;
+  margin-top: .25rem;
+}
+
+.form_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.shop_info_container {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  width: 300px;
+}
+
+.delivery_address_container {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  width: 300px;
+}
+
+.bill_address_container {
+  border-radius: 5px 5px 5px 5px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.bill_and_delivery_container {
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_reset, .button_submit {
+  width: 14em;
+  padding: 1em;
+  margin-top: 20px;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+  
+  .form_container {
+    display: flex;   
+    flex-direction: column;
+    margin: 0 auto;
+    width: 300px;
+  }
+
+  .shop_info_container {
+    margin-bottom: 20px;
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  .bill_address_container {
+    width: 300px;
+    box-sizing: border-box;
+  }
+
+  .delivery_address_container {
+    box-sizing: border-box;
+  }
+
+  .bill_and_delivery_container {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .button_container {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .button_reset, .button_submit {
+    margin: 5px;
+  }
+}

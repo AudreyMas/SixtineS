@@ -1,0 +1,76 @@
+@import '../../assets/scss/variables';
+
+.product{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom:20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    @media screen and (min-width:720px){
+        flex-direction: row;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    .image-container{
+        display: block;
+        position: relative;
+        width: 100%;
+        padding-bottom: 70%;
+        background-size: cover;
+        background-position: 50% 50%;
+        @media screen and (min-width:720px){
+            padding-bottom: 0;
+            width: 15%;
+        }
+    }
+
+
+    &-name{
+        color: $blue;
+        font-size: 36px;
+        font-weight: 400;
+        border-right: 1px solid #DADADA;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media screen and (min-width:720px){
+            max-width: 15%;
+        }
+    }
+    &-stock{
+        position: relative;
+        border-right: 1px solid #DADADA;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100;
+        @media screen and (min-width:720px){
+            width: 37.5%;
+
+        }
+ 
+    }
+    .stock-title{
+        width: calc(40% + 20px);
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .stock-list{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+
