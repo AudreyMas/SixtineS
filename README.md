@@ -2,7 +2,7 @@
 
 ![](sixtines-customer.gif)
 
-**Projet #3 for real client Sixtine's.**
+**Project #3 for real client Sixtine's.**
 *by [Wild Code School*](http://www.wildcodeschool.be)
 
     -DataBase SQL
